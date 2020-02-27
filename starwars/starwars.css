@@ -1,0 +1,8 @@
+:root {
+    box-sizing: border-box;
+}
+
+a > img {
+    height: 15rem;
+    margin: 4px;
+}
