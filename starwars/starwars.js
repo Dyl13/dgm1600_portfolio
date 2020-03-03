@@ -1,7 +1,7 @@
 import { films } from '../data/films.js'
 import { people } from '../data/people.js'
 
-console.log("Hi There!  My first JavaScript code!")
+console.log(people.length)
 
 console.log(document.querySelector('.greeting'))
 
@@ -11,9 +11,27 @@ let greetingDiv = document.querySelector('.greeting')
 
 let castList = document.createElement("ul")
 
+const maleCharacters = people.filter(person => person.gender === "male")
+console.log(maleCharacters)
+
+const femaleCharacters = people.filter(person => person.gender === "female")
+console.log(femaleCharacters)
+
+const otherCharacters = people.filter(person => person.gender === "n/a" || person.gender === "none" || person.gender === "hermaphrodite")
+console.log(otherCharacters)
+
+let maleButton = document.querySelector('#maleButton')
+let femaleButton = document.querySelector('#femaleButton')
+let otherButton = document.querySelector('#otherButton')
+
+maleButton.addEventListener("click", function( event ) {
+  console.log('Thanks for clicking!')
+})
+
 let counter = 1
 
-people.forEach(person => {
+function populateDOM() {
+  people.forEach(person => {
   let nameItem = document.createElement("li")
   nameItem.textContent = person.name
   castList.appendChild(nameItem)
@@ -27,6 +45,8 @@ people.forEach(person => {
     personImg.hidden = true
     //personImg.src = '../images/uvu.png'
   })
+
+
 
   personImg.addEventListener("click", function( event ) {
     console.log('Thanks for clicking!')

@@ -6,3 +6,12 @@ a > img {
     height: 15rem;
     margin: 4px;
 }
+
+button {
+    height: 3rem;
+    border-radius: 10px;
+    font-size: larger;
+    background-color: yellow;
+    color: black;
+    font-weight: 600;
+}
