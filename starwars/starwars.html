@@ -4,17 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Star Wars Project</title>
   <link href="starwars.css" rel="stylesheet">
+  <title>Star Wars Project</title>
 </head>
 <body>
-  <h1>Future Star Wars project code goes here</h1>
-  <div>
-    <button id = maleButton>Male Characters</button>
-    <button id = femaleButton>Female Characters</button>
-    <button id = otherButton>Other Characters</button>
+  <nav id="navbar">
+   <ul class="nav-list">
+   <li>
+    <button id="maleButton">Male Characters</button>
+   </li>
+   <li>
+    <button id="femaleButton">Female Characters</button>
+   </li>
+   <li>
+    <button id="otherButton">Other Characters</button>
+   </li>
+  </ul>
+</nav>
+<h1>Star Wars Characters</h1>
+  <div class="gallery">
+    <script src="starwars.js" type="module"></script>
   </div>
-  <div class="greeting"></div>
-  <script src="starwars.js" type="module"></script>
+  
+<!--   <audio preload="auto" autoplay>
+    <source src="../assets/Star_Wars_original_opening_crawl_1977.mp3" type="audio/mpeg">
+  </audio> -->
+  
 </body>
 </html>
