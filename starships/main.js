@@ -1,5 +1,5 @@
 import { starships } from '../data/starships.js'
-import { removeChildren, getLastNumber } from '../utils.js'
+import { removeChildren, getLastNumber, addStarField } from '../utils.js'
 
 const nav = document.querySelector('.nav')
 
@@ -58,3 +58,5 @@ function populateShipView(shipData) {
 }
 
 populateNav(starships)
+
+addStarField(document.body, 500)

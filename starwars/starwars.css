@@ -13,15 +13,20 @@
     justify-content: flex-end;
     background-color: #000000;
   }
-  .nav-list {
+  .buttons {
     display: flex;
-    list-style-type: none;
+    justify-content: center;
   }
   
-  a > img {
+
+  a> img {
     height: 18rem;
     margin: 4px;
+    margin-bottom: 10px;
+    border-radius: 20px 20px 20px 20px;
+    border: solid 4px yellow;
   }
+  
   
   button {
     height: 3rem;
@@ -32,3 +37,9 @@
     font-weight: 600;
   }
 
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+  }

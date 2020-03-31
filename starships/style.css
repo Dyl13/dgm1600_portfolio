@@ -1,6 +1,6 @@
 :root {
   box-sizing: border-box;
-  background-color: #0e0e0e ;
+  background-color: #000000 ;
 }
 h1 {
   color: yellow;
@@ -13,8 +13,14 @@ header, footer {
 
 .container {
   display: flex;
+  color: #0e0e0e;
 }
 
+img {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+}
 .nav {
   border: solid 2px black;
   padding-right: 1rem;
