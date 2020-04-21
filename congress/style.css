@@ -2,3 +2,27 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+figcaption {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+.fa-democrat {
+    color: blue;
+}
+
+.fa-republican {
+    color: red;
+}
+
+.fa-star {
+    color: rgb(131, 131, 3);
+}
+
+.progressDiv {
+    display:flex;
+    flex-direction: column;
+    margin-left: 40px;
+}

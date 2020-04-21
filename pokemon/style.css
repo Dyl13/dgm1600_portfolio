@@ -1,0 +1,69 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#3B4CCA;
+  }
+  
+  .pokeContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background-color: #FF0000;
+      
+  }
+  
+  .scene {
+    width: 200px;
+    height: 260px;
+    border: 1px solid #3B4CCA;
+    margin: 10px;
+    perspective: 600px;
+    border-radius: 15px;
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+   
+    
+  }
+  
+  .card.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    font-size: .75rem;
+    backface-visibility: hidden;
+    border-radius: 15px;
+  }
+  
+  .card__face--front {
+    background:#3B4CCA;
+    
+  }
+  
+  .card__face--back {
+    background: #3B4CCA;
+    transform: rotateY(180deg);
+  }
+  
+  .card__face ul {
+    text-align: left;
+    list-style-type: square;
+  }
+  
+  img {
+    padding-top: 10px;
+    align-content: center;
+  }
